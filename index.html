@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empresa - Cotizaciones y Contacto</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        background-color: #e6f0fa;
+        color: #0a2342;
+    }
+    header {
+        background: linear-gradient(90deg, #145374, #1d7bbf);
+        color: white;
+        padding: 20px 40px;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    header h1 {
+        margin: 0;
+        font-weight: 700;
+    }
+    nav {
+        margin-top: 15px;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 600;
+        font-size: 1.1em;
+        transition: color 0.3s ease;
+    }
+    nav a:hover {
+        color: #a9cef4;
+    }
+    .container {
+        max-width: 900px;
+        margin: 30px auto;
+        background: white;
+        padding: 25px 40px;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(20, 90, 150, 0.2);
+    }
+    h2 {
+        color: #145374;
+        font-weight: 700;
+    }
+    p {
+        font-size: 1.1em;
+        line-height: 1.5;
+        margin: 15px 0 30px 0;
+    }
+    .btn {
+        background-color: #1d7bbf;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 1em;
+        box-shadow: 0 4px 8px rgba(29, 123, 191, 0.5);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        margin-top: 20px;
+        display: inline-block;
+        text-align: center;
+    }
+    .btn:hover {
+        background-color: #145374;
+        transform: scale(1.05);
+    }
+    form label {
+        display: block;
+        margin-top: 15px;
+        font-weight: 600;
+    }
+    input[type=text], input[type=tel], input[type=email], select, textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 2px solid #a9cef4;
+        border-radius: 8px;
+        font-size: 1em;
+        font-family: inherit;
+        color: #145374;
+    }
+    input[type=radio] {
+        margin-right: 8px;
+    }
+    textarea {
+        resize: vertical;
+        height: 100px;
+    }
+    .submit-btn {
+        background-color: #145374;
+        color: white;
+        padding: 14px 36px;
+        border: none;
+        border-radius: 30px;
+        font-weight: 700;
+        font-size: 1.1em;
+        margin-top: 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 10px rgba(20, 87, 116, 0.6);
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .submit-btn:hover {
+        background-color: #0a2342;
+        transform: scale(1.07);
+    }
+    footer {
+        text-align: center;
+        margin: 50px 0 20px 0;
+        color: #145374;
+        font-weight: 600;
+    }
+.carrusel-rubros {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 0;
+    scroll-snap-type: x mandatory;
+}
+
+.rubro {
+    flex: 0 0 auto;
+    width: 180px;
+    height: 240px; 
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(20, 90, 150, 0.15);
+    scroll-snap-align: start;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    overflow: hidden;
+}
+
+.rubro img {
+    width: 100%;
+    height: 140px; 
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0;
+}
+
+.rubro p {
+    margin: 0;
+    padding: 10px;
+    font-weight: 600;
+    color: #145374;
+    background-color: #e6f0fa;
+    border-radius: 0 0 10px 10px;
+    flex-shrink: 0;
+}
+</style>
+</head>
+<body>
+<header>
+    <h1>Bienvenidos a Distribuidora Futuro</h1>
+    <nav>
+        <a href="#home">Inicio</a>
+        <a href="#cotizaciones">Cotizaciones</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="container" id="rubros">
+  <h2>Áreas que Abordamos</h2>
+  <div class="carrusel-rubros">
+    <div class="rubro">
+      <img src="img/automotriz.png" alt="Automotriz">
+      <p>Automotriz</p>
+    </div>
+    <div class="rubro">
+      <img src="img/perneria.png" alt="Pernería">
+      <p>Pernería</p>
+    </div>
+    <div class="rubro">
+      <img src="img/mineria.png" alt="Minería">
+      <p>Minería</p>
+    </div>
+    <div class="rubro">
+      <img src="img/herramientas.png" alt="Herramientas">
+      <p>Herramientas</p>
+    </div>
+    <div class="rubro">
+      <img src="img/aseo.png" alt="Artículos de Aseo">
+      <p>Artículos de Aseo</p>
+    </div>
+  </div>
+</section>
+
+<section id="home" class="container">
+    <h2>Soluciones Profesionales a su Alcance</h2>
+    <p>En nuestra empresa ofrecemos un servicio personalizado para cotizaciones y órdenes de compra. Complete su solicitud y recibirá una respuesta de nuestro equipo de ventas.</p>
+    <a href="#cotizaciones" class="btn">Realizar Cotización</a>
+</section>
+
+<section id="cotizaciones" class="container">
+    <h2>Formulario de Cotizaciones y Órdenes de Compra</h2>
+    <form id="cotizacionForm" action="cotizacion.php" method="POST">
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="rut">RUT de la empresa:</label>
+        <input type="text" id="rut" name="rut" pattern="^\d{1,2}\.?\d{3}\.?\d{3}-?[0-9kK]{1}$" title="Formato válido: 12345678-9 o 12.345.678-K" required>
+
+        <label for="empresa">Nombre de la empresa:</label>
+        <input type="text" id="empresa" name="empresa" required>
+
+        <label for="giro">Giro de la empresa:</label>
+        <select id="giro" name="giro" required>
+            <option value="">Seleccione...</option>
+            <option value="Comercio">Comercio</option>
+            <option value="Industrial">Industrial</option>
+            <option value="Servicios">Servicios</option>
+            <option value="Otro">Otro</option>
+        </select>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label>¿Retiro en local o despacho?</label>
+        <div>
+            <label><input type="radio" name="retiro" value="Retiro en local" required> Retiro en local</label>
+            <label><input type="radio" name="retiro" value="Despacho" required> Despacho</label>
+        </div>
+
+        <label for="telefono">Teléfono de contacto:</label>
+        <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8,15}" title="Ingrese solo números, 8 a 15 dígitos" required>
+
+        <label for="detalle">Detalle de productos y cantidades a cotizar o comprar (incluya texto e imágenes de referencia):</label>
+        <textarea id="detalle" name="detalle" placeholder="Describa aquí, por ejemplo: 10 cajas de tornillos, 5 metros de cable eléctrico, etc." required></textarea>
+
+        <button type="submit" class="submit-btn">Enviar solicitud</button>
+    </form>
+</section>
+
+<section id="contacto" style="background: linear-gradient(90deg, #145374, #1d7bbf); color: white; padding: 30px 40px; border-radius: 10px; box-shadow: 0 2px 15px rgba(20, 90, 150, 0.3); margin: 30px auto; max-width: 900px;">
+    <h2 style="color: white; font-weight: 700;">Correo</h2>
+    <p style="font-size: 1.1em; margin-bottom: 25px;"><strong>futuro@distribuidorafuturo.cl
+        <h2 style="color: white; font-weight: 700;">Dirección</h2>
+    <p style="font-size: 1.1em; margin-bottom: 25px;"><strong>Coronel Godoy #044, esq. Alameda. Estacion Central
+            <h2 style="color: white; font-weight: 700;">Telefono</h2>
+    <p style="font-size: 1.1em; margin-bottom: 25px;"><strong>2 27792747- FIJO
+    
+</section>
+
+<footer>
+    <p>© 2025 Distribuidora Futuro SPA. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
